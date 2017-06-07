@@ -5,22 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "node server/server.js",
-    "test": "export NODE_ENV=test || SET \"NODE_ENV=test\" && mocha server/**/*.test.js",
-    "test-watch": "nodemon --exec \"npm test\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/robsonklima/node-todo-api.git"
+    "test": "export NODE_ENV=test || SET NODE_ENV=test && mocha server/**/*.test.js",
+    "test-watch": "nodemon --exec 'npm test'"
   },
   "engines": {
     "node": "6.2.2"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/robsonklima/node-todo-api/issues"
-  },
-  "homepage": "https://github.com/robsonklima/node-todo-api#readme",
   "dependencies": {
     "bcryptjs": "^2.3.0",
     "body-parser": "^1.15.2",
